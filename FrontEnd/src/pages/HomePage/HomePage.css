@@ -1,0 +1,173 @@
+.bg-cover {
+    background-image: url('/src/image/picHome.jpeg');
+    background-size: cover !important;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.markTitle{
+    background-color: tomato;
+    color:#fff;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+
+/* card */
+
+
+/* .containercard {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.containercard .cardh {
+    /* position: relative; */
+    border-radius: 10px;
+}
+
+.containercard .cardh .iconcard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.containercard .card:nth-child(1) .iconcard {
+    background: tomato;
+}
+
+.containercard .cardh:nth-child(2) .iconcard {
+    background: #EE5E46;
+}
+
+.containercard.cardh:nth-child(3) .iconcard {
+    background: tomato;
+}
+
+
+.containercard .cardh .iconcard .facard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+.btntakeattendance {
+	border-radius: 20px;
+	border: 1px solid #EE5E46;
+	background-color: #EE5E46;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    margin-top: 50px;
+}
+
+.icard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.containercard .cardh .facecard {
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+}
+@media screen and (max-width:600px){
+    .markTitle{
+    font-size: 50px;
+    }
+    }
+
+.containercard .cardh .facecard.face1card {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.containercard .cardh:hover .facecard.face1card{
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.containercard .cardh .facecard.face1card .contentcard {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.containercard .cardh:hover .facecard.face1card .contentcard {
+    opacity: 1;
+}
+
+.containercard .cardh .facecard.face1card .contentcard i{
+    max-width: 100px;
+}
+
+.containercard .cardh .facecard.face2card {
+    position: relative;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.containercard .cardh:hover .facecard.face2card{
+    transform: translateY(0);
+}
+
+.containercard .cardh .facecard.face2card .contentcard p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.containercard .cardh .facecard.face2card .contentcard h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    /* color: #fff; */
+    font-size: 24px;
+    text-align: center;
+    animation-name: titlecolor;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    border-radius: 20px;
+} 
+
+@keyframes titlecolor {
+    0%   {background-color: tomato;color:#fff;}
+    50% {background-color: rgb(199, 174, 174);color: #fff;}
+    100%   {background-color: tomato;color:#fff;}
+
+  }
+
+.containercard a {
+    text-decoration: none;
+    color: #414141;
+}

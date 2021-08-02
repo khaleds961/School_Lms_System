@@ -1,0 +1,102 @@
+#date{
+    font-size: 20px;
+}
+.choose{
+    display: flex;
+    justify-content: flex-end;
+}
+#labeldate{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+#inside{
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    background-color: #445D7D;
+    cursor: pointer;
+    user-select: none;
+}
+
+#outside{
+    margin:10px;
+    color: #ED5B5D;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    background-color: #F4F0FA ;
+    cursor: pointer;
+    user-select: none;
+    outline: 0;
+}
+
+.dateview{
+    margin:10px;
+    color: #ED5B5D;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    background-color: #F4F0FA ;
+    cursor: pointer;
+    user-select: none;
+    outline: 0;
+}
+.searchview{
+    outline: 0;
+    color: #ED5B5D;
+    border:  solid #ED5B5D 2.5px ;
+    border-radius: 35px;
+    /* margin-left: 50px; */
+    margin-top: 17px;
+    float: right;
+
+}
+
+
+
+
+.box{
+    float: right;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    position: relative;
+}
+.input {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 4px solid #ED5B5D;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #F4F0FA;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    
+    width: 200px;
+    background: #F4F0FA;
+    border-radius: 10px;
+}
+.iconsearch{
+    position: absolute;
+    top: 26%;
+    right: 11px;
+    /* transform: translate(-50%,-50%); */
+    font-size: 26px;
+    color: #ED5B5D;
+    transition: .2s;
+}
+.box:hover .iconsearch{
+    opacity: 0;
+    z-index: -1;
+}
+.box:hover .input{
+    color:#ED5B5D;
+}
